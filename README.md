@@ -3,7 +3,7 @@
 ### [Project Page](https://szuviz.github.io/layered_vectorization/)&ensp;&ensp;&ensp;[Paper](https://arxiv.org/abs/2406.05404)
 
 <!-- > <a href="/"> Zhenyu Wang</a>, -->
-Zhenyu Wang,
+>Zhenyu Wang,
 Jianxi Huang</a>,
 <a href="https://zhdsun.github.io/">Zhida Sun</a>,
 Yuanhao Gong,
