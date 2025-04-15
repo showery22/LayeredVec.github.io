@@ -48,6 +48,7 @@ python setup.py install
 ```
 ```bash
 cd ..
+cd LayeredVectorization
 pip install -r requirements.txt
 ```
 ## Model Checkpoints
