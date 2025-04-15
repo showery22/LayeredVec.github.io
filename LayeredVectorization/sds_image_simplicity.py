@@ -153,8 +153,8 @@ def image_optimization(device, pipe: StableDiffusionPipeline, image: np.ndarray,
 def sds_based_simplification(device, image: str, simp_img_seq_indexs: List[int], simp_img_seq_save_path: str, all_simp_img_seq_save_path: str = "-1"):
     image = load_512(image)
     prompt = " "
-    model_id  =  "/home/ubuntu/workspace/WZY/Projects/image_vectorization-1.0/models--runwayml--stable-diffusion-v1-5/snapshots/1d0c4ebf6ff58a5caecab40fa1406526bca4b5b9"
-    # model_id = "runwayml/stable-diffusion-v1-5"
+    # model_id  =  "/home/ubuntu/workspace/WZY/Projects/image_vectorization-1.0/models--runwayml--stable-diffusion-v1-5/snapshots/1d0c4ebf6ff58a5caecab40fa1406526bca4b5b9"
+    model_id = "runwayml/stable-diffusion-v1-5"
     pipeline = StableDiffusionPipeline.from_pretrained(model_id).to(device)
     num_iters = simp_img_seq_indexs[0]
     all_simp_img_seq = image_optimization(device, pipeline, image, prompt,num_iters)
