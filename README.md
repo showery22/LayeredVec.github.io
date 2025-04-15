@@ -2,7 +2,7 @@
 
 <!-- ![teaser](docs/layered.png) -->
 <div>
-  <img src="docs/layered.png" alt="teaser" width="600" height="auto">
+  <img src="static/images/layered6.png" alt="teaser" width="600" height="auto">
 </div>
 
 ### [Project Page](https://szuviz.github.io/layered_vectorization/)&ensp;&ensp;&ensp;[Paper](https://arxiv.org/abs/2406.05404)
