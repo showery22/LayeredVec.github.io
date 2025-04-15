@@ -1,0 +1,42 @@
+simp_img_seq_indexs: [80, 60, 40, 20, 0]
+# simp_img_seq_indexs: [0]
+is_save_all_simp_img_seq: True
+is_save_masks: True
+multiple: 1
+approxpolydp_epsilon: 5
+color_fitting_type: "dominan" # "dominan" or "mse"
+add_visual_path_num_iters: 5
+max_path_num_limit: 256
+
+paths_merge_color_threshold: 0.1
+paths_merge_distance_threshold: 3
+paths_remove_visual_threshold: 7.0
+
+# Perform kmeans clustering on target images to reduce color categories
+is_cluster_target_img: True
+kmeas_k: 80
+
+sam:
+  sam_checkpoint: "sam_vit_h_4b8939.pth"
+  model_type: "vit_h"
+  points_per_side: 32
+  pred_iou_thresh: 0.86
+  stability_score_thresh: 0.85
+  crop_n_layers: 1
+  crop_n_points_downscale_factor: 2
+  min_mask_region_area: 100
+  box_nms_thresh: 0.7
+
+train:
+  is_train_stroke: False
+  is_train_visual_color: True
+  is_train_struct_color: True
+  struct_opt_num_iters: 50
+  visual_opt_num_iters: 100
+
+
+base_lr:
+  point: 1
+  color: 0.01
+  stroke_width: 0.1
+  stroke_color: 0.01
