@@ -25,7 +25,7 @@
 **Requirement**: 5.0<GCC<6.0;  nvcc >10.0. -->
 
 ```bash
-git clone https://github.com/SZUVIZ/layered_vectorization.git
+git clone https://github.com/showery22/LayeredVec.github.io.git
 conda create -n lv python=3.10
 conda activate lv
 conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.6 -c pytorch -c nvidia
